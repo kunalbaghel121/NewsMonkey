@@ -29,7 +29,7 @@ const App = ()=> {
       <div>
 
         
-<BrowserRouter> 
+<BrowserRouter basename='/NewsMonkey' > 
     <Navbar/>
     <LoadingBar
         color='#f11946'
@@ -37,7 +37,7 @@ const App = ()=> {
        
       />
       <Routes>
-        <Route exact path="/" element={<News setProgress ={setProgress} key="general"  pageSize={pageSize} country="in" category="general" />} />
+        <Route exact path="/NewsMonkey" element={<News setProgress ={setProgress} key="general"  pageSize={pageSize} country="in" category="general" />} />
         <Route exact path="/business" element={<News setProgress ={setProgress} key="business" pageSize={pageSize} country="in" category="business" />} />
         <Route exact path="/health" element={<News setProgress ={setProgress} key="health" pageSize={pageSize} country="in" category="health" />} />
         <Route exact path="/sports" element={<News setProgress ={setProgress} key="sports" pageSize={pageSize} country="in" category="sports" />} />
